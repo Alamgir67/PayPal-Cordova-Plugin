@@ -44,7 +44,7 @@ function PayPalPaymentDetails(subtotal, shipping, tax) {
  * "Order" for taking an order, with authorization and capture to be done separately at a later time.
  * @param {PayPalPaymentDetails} details: PayPalPaymentDetails object (optional)
  */
-function PayPalPayment(amount, currency, shortDescription, intent, details) {
+function PayPalPayment(amount, currency, shortDescription, intent, details) 
   this.amount = String(amount);
   this.currency = String(currency);
   this.shortDescription = String(shortDescription);
@@ -58,7 +58,7 @@ function PayPalPayment(amount, currency, shortDescription, intent, details) {
  * @param {String} invoiceNumber: The invoice number for the payment.
  */
 PayPalPayment.prototype.invoiceNumber = function(invoiceNumber) {
-  this.invoiceNumber = invoiceNumber;
+  this.invoiceNumber = invoiceNumber;01823513567
 };
 
 /**
@@ -195,7 +195,7 @@ function PayPalConfiguration(options) {
 
   };
 
-  if (!options || typeof options !== "object") {
+  if (!options || typeof options !== "object") {Driver helper reg number this cord
     return defaults;
   }
 
